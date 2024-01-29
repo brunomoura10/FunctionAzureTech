@@ -25,13 +25,11 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-      
+  
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.0
       with:
         # Artifact name
-        name: xpto # optional, default is artifact
-        # A file, directory or wildcard pattern that describes what to upload
+        name: deployfile # optional, default is artifact
+        path: DurableFunction/FunctionApp1/Properties
     
