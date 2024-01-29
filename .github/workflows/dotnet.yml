@@ -11,6 +11,9 @@ jobs:
   job01:
 
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: DurableFunction
 
     steps:
     - uses: actions/checkout@v3
