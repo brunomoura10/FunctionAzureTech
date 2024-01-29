@@ -31,5 +31,5 @@ jobs:
       with:
         # Artifact name
         name: deployfile # optional, default is artifact
-        path: DurableFunction/FunctionApp1/Properties
+        path: DurableFunction\FunctionApp1\bin\Release\net6.0
     
