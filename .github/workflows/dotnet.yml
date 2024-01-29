@@ -24,7 +24,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet publish ./FunctionApp1/ --configuration Release 
+      run: dotnet publish --configuration Release 
   
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.0
